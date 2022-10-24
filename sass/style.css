@@ -235,6 +235,10 @@ header h1 {
   left: 2rem;
   color: #000;
 }
+.header__pages .header__img {
+  width: 20rem;
+  margin: 0.5rem auto;
+}
 
 footer {
   background: #363636;
