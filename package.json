@@ -1,0 +1,22 @@
+{
+  "name": "boutelet_michael_p3-ohmyfood_102022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelBout/boutelet_michael_p3-ohmyfood_102022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelBout/boutelet_michael_p3-ohmyfood_102022/issues"
+  },
+  "homepage": "https://github.com/michaelBout/boutelet_michael_p3-ohmyfood_102022#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
