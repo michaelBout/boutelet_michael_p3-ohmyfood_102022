@@ -1,0 +1,44 @@
+.location {
+  width: 100%;
+  background: $color-background1;
+  height: 4rem;
+  margin: 0 auto;
+  @include desktop-only {
+    height: 6.5rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7.5rem;
+    left: 0;
+    right: 0;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0rem 1rem 4rem 0.2rem rgba(0, 0, 0, 0.75);
+  }
+  &__town {
+    display: flex;
+    justify-content: center;
+
+    p {
+      font-size: 1.5rem;
+      line-height: 4rem;
+      position: relative;
+      @include desktop-only {
+        font-size: 2rem;
+        line-height: 6.5rem;
+      }
+    }
+    .in {
+      font-size: 1.4rem;
+      line-height: 4rem;
+      position: relative;
+      right: 1.4rem;
+      top: -0.1rem;
+      @include desktop-only {
+        font-size: 2rem;
+        line-height: 6rem;
+        right: 2rem;
+      }
+    }
+  }
+}

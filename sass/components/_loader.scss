@@ -1,0 +1,102 @@
+.preloader {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0;
+  background: rgba(255, 250, 250, 0.6);
+  overflow: hidden;
+  z-index: 3;
+  -webkit-animation-name: loading;
+  animation-name: loading;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+.loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 15rem;
+  height: 15rem;
+  margin: -7.5rem 0 0 -7.5rem;
+  border-radius: 50%;
+  border: 0.3rem solid transparent;
+  border-top-color: $color-primary;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  border-radius: 50%;
+  border: .3rem solid transparent;
+  border-top-color: $color-secondary;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  border-radius: 50%;
+  border: .3rem solid transparent;
+  border-top-color: $color-tertiary;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loading {
+  0% {
+    height: 100%;
+  }
+  99% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
+}
+@keyframes loading {
+  0% {
+    height: 100%;
+  }
+  99% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
+}

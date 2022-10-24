@@ -1,0 +1,40 @@
+@mixin tablet-only {
+  @media screen and (min-width: map-get($breakpoints, tablet)) {
+    @content;
+  }
+}
+@mixin desktop-only {
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+@mixin flexbox__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexbox__space {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@mixin title-style {
+  margin: 3rem 0 1rem 2rem;
+  font-size: 2.2rem;
+  @include tablet-only {
+    text-align: center;
+    font-size: 3rem;
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 10rem;
+      height: 0.2rem;
+      background-color: $color-tertiary;
+      vertical-align: middle;
+      margin: 0 2rem;
+    }
+  }
+}

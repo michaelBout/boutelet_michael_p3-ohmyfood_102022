@@ -1,0 +1,28 @@
+.reservation {
+  width: 100%;
+  background: $color-background2;
+  height: 29rem;
+  text-align: center;
+
+  &__block {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 5rem;
+
+    h2 {
+      font-size: 2.3rem;
+      padding: 0 2rem;
+      @include desktop-only {
+        font-size: 3.2rem;
+      }
+    }
+    p {
+      padding-top: 1.3rem;
+      font-size: 1.8rem;
+      font-weight: 300;
+      @include desktop-only {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}

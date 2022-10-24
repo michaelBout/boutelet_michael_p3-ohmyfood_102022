@@ -1,0 +1,79 @@
+.functioning {
+  width: 100%;
+  height: auto;
+  
+
+  &__title {
+    @include title-style;
+  }
+  &__contain {
+    width: 95%;
+    margin: 0 auto;
+    @include desktop-only {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__manual {
+    @include flexbox__center;
+    position: relative;
+    width: 90%;
+    height: 7rem;
+    margin: 2rem auto;
+    border-radius: 2.8rem;
+    background: $color-background1;
+    box-shadow: 0px 1rem 1rem -0.5rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+    i {
+      color: grey;
+      width: 2rem;
+      font-size: 1.4rem;
+      margin: 0 2.5rem 0 3rem;
+    }
+    &:hover {
+      background: lighten($color-primary, 36%);
+      i {
+        color: $color-primary;
+      }
+    }
+    @include desktop-only {
+      margin: 4rem 1.5rem;
+      width: 95%;
+      height: 8rem;
+    }
+  }
+  &__number {
+    position: absolute;
+    left: -1.5rem;
+    top: 2rem;
+    font-size: 2rem;
+    background: $color-primary;
+    border-radius: 50%;
+    padding: 0.5rem 1.2rem;
+    color: $color-text;
+    @include desktop-only {
+      top: 2.3rem;
+    }
+  }
+  &__text {
+    position: absolute;
+    left: -1rem;
+    font-size: 1.4rem;
+    font-family: "Roboto";
+
+    i {
+      font-size: 1.6rem;
+      margin-left: 5rem;
+    }
+    @include tablet-only {
+      font-size: 2rem;
+      i {
+        font-size: 2rem;
+      }
+    }
+    @include desktop-only {
+      margin-left: 2rem;
+    }
+  }
+}
