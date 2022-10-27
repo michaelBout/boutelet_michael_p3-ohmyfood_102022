@@ -16,6 +16,7 @@
       rgb(255, 121, 218, 0.7),
       rgb(161, 107, 224, 0.7)
     );
+    box-shadow: 0.1rem 0.1rem .5rem black;
   }
   @include tablet-only {
     width: 25rem;
